@@ -1,5 +1,7 @@
 package vdcomtest.VdCom.partOne;
 
+import com.sun.xml.bind.v2.runtime.output.SAXOutput;
+
 import java.util.Scanner;
 import java.util.stream.Stream;
 
@@ -31,6 +33,8 @@ public class TaskOne {
                 solutionOne(firstN, secondN);
                 System.out.println("Использовать решение 2. Функциональные интерфейсы и Stream API");
                 solutionTwo(firstN, secondN);
+                System.out.println("Использовать решение 3.Тернарный оператор");
+                solutionThree(firstN, secondN);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
@@ -87,5 +91,18 @@ public class TaskOne {
 
     }
 
+    /**
+     * Решение номер 3. Тернарный оператор
+     */
+    static void solutionThree(int firstN, int secondN) {
+        while (true) {
+            int three = scanner.nextInt();
+            String input = ((three > 0 && three % 3 == 0 && three % 5 == 0) ? "FooBar" :
+                    (((three > 0 && three % 5 == 0)) ? "Bar" :
+                            (((three > 0 && three % 3 == 0)) ? "Foo"
+                                    : String.valueOf(three))));
+            System.out.println(input);
 
+        }
+    }
 }
