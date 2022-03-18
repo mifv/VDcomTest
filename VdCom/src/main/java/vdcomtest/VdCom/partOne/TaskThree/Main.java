@@ -68,7 +68,7 @@ public class Main {
 
 
         try {
-            // в задании сказано о вводе данных через стандартные методы, пусть будет через сканер
+
             Scanner sc2 = new Scanner((System.in));
             System.out.println("How many piramids do you have transfer in bars?");
             double pir = sc2.nextDouble();
