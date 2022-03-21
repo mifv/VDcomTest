@@ -70,19 +70,19 @@ public class Main {
         try {
 
             Scanner sc2 = new Scanner((System.in));
-            System.out.println("How many piramids do you have transfer in bars?");
+            System.out.println("Сколько пирамид у вас переведено в барах?");
             double pir = sc2.nextDouble();
 
             Scanner sc1 = new Scanner((System.in));
-            System.out.println("How many giraffes do you have transfer in hares?");
+            System.out.println("Сколько жирафов у вас переведено в зайцев?");
             double gir = sc1.nextDouble();
 
             Scanner sc3 = new Scanner((System.in));
-            System.out.println("How many cats do you have transfer in bytes?");
+            System.out.println("Сколько котов у вас переведено в байтах");
             double cats = sc3.nextDouble();
 
             Scanner sc = new Scanner((System.in));
-            System.out.println("How many kilobytes do you have transfer in bits?");
+            System.out.println("Сколько килобайт у вас есть для передачи в битах?");
             double kB = sc.nextDouble();
             DecimalFormat decimalFormat = new DecimalFormat("#.###");
 
